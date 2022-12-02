@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    app:behavior_peekHeight="30dp"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp"
+        android:id="@+id/bottom_sheet">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:textSize="@dimen/_14sdp"
+            android:text="@string/sort_by"/>
+      <RadioGroup
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/_6sdp"
+          android:id="@+id/radioGroup">
+          <com.google.android.material.radiobutton.MaterialRadioButton
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/ascending"
+              android:textColor="@color/black"
+              android:text="@string/ascending_order"/>
+          <com.google.android.material.radiobutton.MaterialRadioButton
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textColor="@color/black"
+              android:id="@+id/descending"
+              android:text="@string/descending_order"/>
+      </RadioGroup>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/apply"
+            android:id="@+id/apply_button"
+            android:backgroundTint="@color/app_color"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</layout>

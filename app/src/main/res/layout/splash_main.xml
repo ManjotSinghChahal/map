@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.SplashActivity.SplashActivity">
+    <ImageView
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_above="@+id/loc_text"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/app_color"
+        android:layout_marginBottom="@dimen/_6sdp"
+        android:background="@drawable/location_icon"
+        tools:ignore="ContentDescription" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loc_text"
+        android:text="@string/location_source"
+        android:textSize="@dimen/_20sdp"
+        android:textColor="@color/app_color"
+        android:layout_centerInParent="true" />
+</RelativeLayout>
